@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0px auto;
+    max-width:100%;
+    /* overflow-x: hidden; */
+}
+
+body {
+    width: 100%;
+    background-color: white;
+
+
+}
+
+.container {
+    display: flex;
+
+    text-align: center;
+    padding: 1rem;
+    background-color: white;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+
+}
+
+h2 {
+    color: gold;
+    font-size: 2rem;
+    text-indent: 20px;
+    font-weight: lighter;
+}
+
+nav {
+
+    background-color: white;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 1.2rem;
+
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: burlywood;
+    border-radius: 5px;
+}
+
+.Introduction {
+
+    background-color: white;
+
+    text-align: center;
+
+
+}
+
+.container1 {
+    margin: 20px;
+}
+
+#intro {
+    color: coral;
+    font-size: 2rem;
+    padding-left: 20px;
+    font-weight: normal;
+    padding: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.Introduction img {
+    max-width: 100%;
+    height: auto;
+}
+
+.content .row {
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.content .col {
+    width: 24%;
+    text-align: left;
+
+}
+
+.content .col img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.p1 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: darkgoldenrod;
+    font-weight: lighter;
+
+}
+
+.button {
+    display: inline-block;
+    background-color: darkgoldenrod;
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#read {
+    background-color: gray;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin: 40px;
+}
+
+.left {
+    flex: 1;
+}
+
+.right {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.sub-right {
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+
+.img .post {
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    background-image: url('./classic-pattern-bg\ \(1\).png');
+    padding: 20px;
+    max-height: fit-content;
+
+}
+
+.nature {
+    width: 250px;
+    border: 2px solid black;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #f80a0a;
+    padding: 20px;
+    padding-bottom: 10px;
+}
+
+.links {
+    width: 250px;
+    line-height: 1.4;
+    color: chocolate;
+    margin-left: 20px;
+
+
+}
+
+.links a {
+    color: rgb(196, 196, 77);
+}
+
+a {
+    color: rgb(96, 96, 240);
+}
+
+.about {
+    width: 250px;
+    margin-right: 20px;
+}
+
+.parent {
+    width: 300px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 5px;
+}
+
+.child {
+    background-color: aqua;
+
+}
+
+.subchild {
+    width: 340px;
+    margin-left: 20px;
+    margin-top: -100px;
+}
+
+.p2 {
+    font-size: 1.2rem;
+    color: burlywood;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 1.2;
+   
+}
+
+.p4 {
+    font-size: 1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: darkorange;
+}
+
+@media (max-width: 768px) {
+
+    .content .row {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        /* overflow: visible; */
+       
+
+
+    }
+
+    .content .col {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .content1 {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        line-height: 1.6;
+
+
+    }
+
+    .sub-right {
+        justify-content: space-between;
+    }
+
+    .nature,
+    .links,
+    .about {
+        width: 100%;
+        margin: 0px;
+    }
+
+    .subchild {
+        margin-top: -400px;
+        margin-left: 220px;
+        
+    }
+
+    .parent {
+        margin: auto;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    }
+   
+}
+
+@media (max-width: 400px) {
+    .container {
+        flex-direction: column;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+
+    }
+
+    nav ul {
+        flex-direction: column;
+
+    }
+
+    nav ul li {
+        display: block;
+
+    }
+
+    .Introduction {
+        width: 700px;
+    }
+
+    .Introduction img {
+        width: 800px;
+
+        height: auto;
+    }
+
+    .content .row {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        width: 500px;
+    }
+
+    .content .col img {
+        width: 100vw;
+        height: auto;
+    }
+
+    .content1 {
+        flex-direction: column;
+        width: 600px;
+    }
+
+    .footer {
+        padding: 10px;
+        width: 700px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    .parent {
+        margin-left: 185px;
+    }
+
+    .subchild {
+        margin: auto;
+        margin-top: -400px;
+        margin-left: 185px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .sub-right {
+        justify-content: space-between;
+    }
+
+    .nature,
+    .links,
+    .about {
+        margin: 0px;
+
+    }
+
+    .parent {
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    }
+}
